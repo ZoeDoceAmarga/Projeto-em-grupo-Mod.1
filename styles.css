@@ -74,11 +74,65 @@ img{
 
 /*footer*/
 
-.container-footer{
-   
-    height: 180px;
+footer{
+    display: flex;
+    align-items: center;   /*deixar todos os item alinhados*/
+    flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
+    height: 100px;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #fff;
+}
+
+.col1{
+    width: 20%;
+    height: 80px;
+    margin-left: 1%;
+    border-radius: 5px;
+
+
+}
+.col2{
+    width: 20%;
+    height: 80px;
+    margin-left: 1px;
+    border-radius: 5px;
+    
+
+}
+.inicio{
+    cursor:default ;
+}
+.col1_conteudo{
+    list-style: none;
+}
+.col1_conteudo li a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.col3{
+    width: 20%;
+    height: 80px;
+    margin-left: 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+}
+.button_contato{
+    width:22%;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius:15px;
+    background-color: rgb(255, 169, 57);
+}
+.logo_rodape{
+    width: 40px;
+    height: 40px;
+    margin-left: 3%;
+    border-radius: 10px;
+    background-color: rgb(190, 103, 125);
 }
