@@ -19,7 +19,7 @@ body{
     margin: 0;
     width: 100%;
     height: 110vh;
-    background-color:rgb(233, 151, 151) ;
+    background-color:#ffcccc ;
 }
 header{
     display: flex;
@@ -65,7 +65,7 @@ h1{
 }
 /* meio da página inicial */
 .banner1{
-    background-image: url(../imagens/background-banner1.jpg); /* banner de boas-vindas da página inicial */
+    background-image: url(../imagens/brigadeiros-tipicos-do-brasil-varios-sabores-em-mesa-de-madeira_92534-443.jpg); /* banner de boas-vindas da página inicial */
     background-size: cover;
     display: flex;
     align-items: center; 
@@ -90,7 +90,7 @@ h1{
     margin: 20px 20px 15px 20px;
 }
 .banner2{ /* banner para linkar com a página de serviços */
-    background-image: url(../imagens/background-banner2.jpg);
+    background-image: url(../imagens/Trufas-doces-finos-gourmet-o87a6xc36halaa9id2o9hnrokb1oon0j5s4mcntnrc-1200x480.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ h1{
 }
 #peçaJa{
     font-family: Indie;
-    color: #ff66c4;
+    color: rgb(190, 103, 125);
     text-shadow: 2px 2px black;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -137,9 +137,7 @@ img{
     width: 100%;
     border-radius: 5px;
 }
-
 /*footer*/
-
 footer{
     display: flex;
     align-items: center;   /*deixar todos os item alinhados*/
@@ -150,7 +148,6 @@ footer{
     bottom: 0;
     background-color: #fff;
 }
-
 .col1{
     width: 20%;
     height: 80px;
@@ -202,3 +199,64 @@ footer{
     border-radius: 10px;
     background-color: rgb(190, 103, 125);
 }
+/*Inicio do Form*/
+.box-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    width: 75%;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+section form{
+    display: flex;
+    flex-direction: column;
+}
+section h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Candy;
+}
+form label{
+    font-family: Indie;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+form input{
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form textarea{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form textarea:focus{
+    border-radius: 15px;
+}
+form button{
+    background: transparent;
+    border: solid white;
+    color: white;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+form button:hover{
+    background-color: white;
+    color: #f94449;
+}
+/*Fim do Form*/
