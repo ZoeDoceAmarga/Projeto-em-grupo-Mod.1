@@ -14,29 +14,38 @@ html,body{
     font-family: Indie;
     src: url(IndieFlower-Regular.ttf);
 }
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto-Condensed.ttf);
+}
 body{
     padding: 0;
     margin: 0;
     width: 100%;
     height: 110vh;
-    background-color:#ffcccc ;
+    background-color:#BC7359;
 }
 header{
     display: flex;
-    justify-content: space-between;  /*deixar a logo no lado esquerdo e o menu no lado direito*/
+    justify-content: flex-start;  /*deixar a logo no lado esquerdo e o menu no lado direito*/
     width: 100%;
     height: 70px;
     padding: 10px;
     background-color: rgb(58, 57, 55);
-    box-shadow: 0px 5px 20px rgb(0, 0, 0);
-    align-items: center;   /*deixar todos os item alinhados*/
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);   /*deixar todos os item alinhados*/
     flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    
+
 }
 .logo{
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    background-color: aliceblue;
 
 }
 
@@ -116,7 +125,7 @@ h1{
     padding: 10px;
     font-family: Cambria;
     border-radius: 10px;
-    color: #1893f8;
+    color: #1d1e1f;
 }
 #seuPedido:hover{
     padding: 12px;
@@ -142,11 +151,11 @@ footer{
     display: flex;
     align-items: center;   /*deixar todos os item alinhados*/
     flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
-    height: 100px;
+    height: 150px;
     width: 100%;
-    position: fixed;
+    position: static  /* fixed*/;
     bottom: 0;
-    background-color: #fff;
+    background-color: #52322F;
 }
 .col1{
     width: 20%;
@@ -172,7 +181,7 @@ footer{
 }
 .col1_conteudo li a{
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 250, 250);
     text-decoration: none;
 
 }
@@ -185,20 +194,23 @@ footer{
     align-items: center;
 
 }
-.button_contato{
-    width:22%;
+
+/*.button_contato{
+    width:105px;
     padding: 8px;
     margin-right: 5px;
     border-radius:15px;
     background-color: rgb(255, 169, 57);
-}
-.logo_rodape{
+}*/
+.logo_rodape,.redesSociais{
     width: 40px;
     height: 40px;
     margin-left: 3%;
     border-radius: 10px;
-    background-color: rgb(190, 103, 125);
+    /*background-color: rgb(190, 103, 125);*/
 }
+
+
 /*Inicio do Form*/
 .box-form{
     display: flex;
@@ -260,3 +272,4 @@ form button:hover{
     color: #f94449;
 }
 /*Fim do Form*/
+
