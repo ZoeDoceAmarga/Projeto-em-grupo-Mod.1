@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Página Inicial</title>
+    <title>Contato</title>
 </head>
 <body>
     <header class="cabecalho">
         <div class="logo"> <img src="imagens/logo.png">  </div>
         <div class="titulo"><h1>Candy Store</h1></div>
         <ul class="menu">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="contato.html">Contato</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </header>
     <div class="banner1">
@@ -26,9 +27,9 @@
         <h2>Contato</h2>
         <form action="">
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digete seu nome">
+            <input type="text" name="name" placeholder="Digite seu nome">
             <label>Email</label>
-            <input type="email" name="email" placeholder="Digete seu email">
+            <input type="email" name="email" placeholder="Digite seu email">
             <label>Telefone</label>
             <input type="tel" name="tel" placeholder="(xx)xxxxx-xxxx">
             <label>Mensagem</label>
@@ -41,36 +42,34 @@
         <h1 id="peçaJa">Peça já o seu!</h1>
         <a id="seuPedido" onclick="botao()" href="">FAÇA SEU PEDIDO</a>
     </div>
-    <footer style="position: static;">
-    <div class="logo_rodape"></div>
-    <div class="col1">
+    <footer>
+        <div class="logo_rodape"> <img src="imagens/logo.png"> </div>
 
-        <ul class="col1_conteudo">
-        <li class="inicio"><a href="#"><strong>Início</strong></a></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="produtos.html">Produtos</a></li>
-        <li><a href="#">Serviços</a></li>
-        </ul>
-
-    </div>
-    <div class="col2">
-
-        <ul class="col1_conteudo">
-        <li class="inicio"><a href="#"><strong>Sobre nós</strong></a></li>
-        <li><a href="#">Sobre a empresa</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        </ul>
-
-    </div>
-    <div class="col3">
-        <div class="logo_rodape"></div>
-        <div class="logo_rodape"></div>
-        <div class="logo_rodape"></div>
-        <div class="button_contato">Contato </div>
-    </div>
+        <div class="col1">
+            <ul class="col1_conteudo">
+            <p class="t-footer"><strong> Início </strong></p>
+            <li> <a href="home.html" >Home </a> </li>
+            <li> <a href="produtos.html"> Produtos </a> </li>
+            <li> <a href="#"> Serviços </a> </li>
+            </ul>
+        </div>
     
-    </footer>
-    <script src="js/script.js"></script>
+        <div class="col2">
+            <ul class="col1_conteudo">
+            <p class="t-footer"> <strong>Sobre nós</strong> </p>
+            <li > <a href="#">Sobre a empresa</a> </li>
+            <li > <a href="contato.html"> Contato </a> </li>
+            </ul>
+        </div>
+    
+        <div class="col3">
+            <div class="logo_rodape"><img src="imagens/facebook.png"></div>
+            <div class="logo_rodape"><img src="imagens/instagram.png"></div>
+            <div class="logo_rodape"><img src="imagens/whatsapp.png"></div>
+        </div>
+        
+        </footer>
+        <script src="js/script.js"></script>
 </body>
 </html>
 </body>
