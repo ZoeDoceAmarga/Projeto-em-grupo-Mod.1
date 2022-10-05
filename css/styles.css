@@ -25,34 +25,38 @@ body{
     height: 110vh;
     background-color:#BC7359;
 }
-header{
+.cabecalho{
     display: flex;
-    justify-content: flex-start;  /*deixar a logo no lado esquerdo e o menu no lado direito*/
-    width: 100%;
-    height: 70px;
-    padding: 10px;
-    background-color: rgb(58, 57, 55);
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    background-color: rgb(58,57,55);
     box-shadow: 0px 5px 20px rgb(0, 0, 0);   /*deixar todos os item alinhados*/
-    flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
+
+
 }
 .titulo{
-    display: flex;
-    justify-content: center;
-    width: 200px;
     
-
+    position: absolute;
+    left: 350px;
 }
-.logo{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-
+.titulo h1{
+    margin: 0px;
 }
 
 .menu{
     display: flex;
+    justify-content: flex-start;  /*deixar a logo no lado esquerdo e o menu no lado direito*/
     list-style: none;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
+}
+
+.logo{
+    
+    border-radius: 10px;
+
 }
 .menu li a{
     display: block;
@@ -173,8 +177,8 @@ footer{
     
 
 }
-.inicio{
-    cursor:default ;
+.t-footer{
+    color: #fff;
 }
 .col1_conteudo{
     list-style: none;
@@ -202,6 +206,7 @@ footer{
     border-radius:15px;
     background-color: rgb(255, 169, 57);
 }*/
+
 .logo_rodape,.redesSociais{
     width: 40px;
     height: 40px;
