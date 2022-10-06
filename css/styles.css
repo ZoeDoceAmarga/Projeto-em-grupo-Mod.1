@@ -213,25 +213,6 @@ h1{
 
 
 /*fim da página sobre*/
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-.container div{
-    flex: 1 1 00px;
-    margin: 10px;
-}
-.item p{
-    font-family: Roboto; 
-    text-align: center;
-}
-img{
-    width: 100%;
-    border-radius: 5px;
-}
 /*footer*/
 footer{
     display: flex;
@@ -367,3 +348,53 @@ form button:hover{
 }
 /*Fim do Form*/
 
+/*inicio do slide*/
+section{
+    background-color: #1d1e1f;
+    display: flex;
+    flex-direction:row;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
+}
+section img{
+    display: flex;
+    flex: none;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 500px;
+}
+.input-radio{
+    display: block;
+}
+.label-radio{
+    display: inline-flex;
+    position: relative;
+    left: 47.5%;
+    border: solid;
+    border-color: #fff;
+    border-radius: 15px;
+    margin-top: 5px;
+    height: 15px;
+    width: 15px;
+}
+#radio1:checked ~ img{
+    margin-left: 0%;
+}
+#radio2:checked ~ img{
+    margin-left: -20%;
+}
+#radio3:checked{
+    margin-left: -40%;
+}
+#radio4:checked{
+    margin-left: -60%;
+}
+#radio5:checked{
+    margin-left: -80%;
+}
+
+/*Fim do Slide*/
