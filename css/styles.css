@@ -19,8 +19,8 @@ html,body{
     src: url(Roboto-Condensed.ttf);
 }
 body{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     width: 100%;
     height: 110vh;
     background-color:#BC7359;
@@ -90,6 +90,24 @@ h1{
     min-height: 200px;
     margin-top: 10px;
 }
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    flex: 1 1 0px;
+    margin: 10px;
+
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
 .texto{ /* div para texto de apresentação da empresa */
     display: flex;
     flex-direction: column;
@@ -146,6 +164,10 @@ h1{
     padding: 12px;
 }
 /* fim do conteúdo da página inicial */
+
+
+
+
 /*meio da página sobre*/
 .coluna1{
     width: 50%;
@@ -162,15 +184,17 @@ h1{
     display: flex;
 }
 .texto_nossa_empresa{
-        display: flex;
-        flex-direction: column;
-        width: 75%;
+
+     display: flex;
+     flex-direction: column;
+     width: 75%;
         
         
-    }
-    .separador{
-        margin-top: 120px;
-    }
+}
+ .separador{
+
+     margin-top: 120px;
+}
 
  .texto_nossa_empresa p{ 
     font-family: Roboto; 
@@ -284,7 +308,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: #fff;
     width: 75%;
     border-radius: 30px;
     margin-top: 20px;
@@ -349,52 +373,71 @@ form button:hover{
 /*Fim do Form*/
 
 /*inicio do slide*/
-section{
-    background-color: #1d1e1f;
-    display: flex;
-    flex-direction:row;
-    height: 400px;
-    width: 500px;
-    margin: 0 auto;
-    padding: 0;
-    overflow: visible;
-}
-section img{
-    display: flex;
-    flex: none;
-    margin: 0;
-    padding: 0;
-    height: 400px;
-    width: 500px;
-}
-.input-radio{
+.slide_principal{
     display: block;
-}
-.label-radio{
-    display: inline-flex;
     position: relative;
-    left: 47.5%;
-    border: solid;
-    border-color: #fff;
-    border-radius: 15px;
-    margin-top: 5px;
-    height: 15px;
-    width: 15px;
-}
-#radio1:checked ~ img{
-    margin-left: 0%;
-}
-#radio2:checked ~ img{
-    margin-left: -20%;
-}
-#radio3:checked{
-    margin-left: -40%;
-}
-#radio4:checked{
-    margin-left: -60%;
-}
-#radio5:checked{
-    margin-left: -80%;
-}
-
+    margin: auto;
+    margin-top: 20px;
+    width: 1540px;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+  }
+  
+  .slide_principal li {
+    list-style: none;
+    position: absolute;
+  }
+  
+  .slide_principal img{
+    width: 1540px;
+    height: 400px;
+    margin: auto;
+    vertical-align: top;
+    border-radius: 5px;
+  }
+  
+  .slide_principal input{
+    display: none;
+  }
+  
+  .slide_principal label{
+    background-color: rgb(247, 237, 237);
+    bottom: 10px;
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .slide_principal label:hover{
+    background-color: rgb(130, 134, 133);
+  }
+  
+  .slide_principal li:nth-child(1) label{
+    left: 10px;
+  }
+  .slide_principal li:nth-child(2) label{
+    left: 30px;
+  }
+  
+  .slider li:nth-child(3) label{
+    left: 100px;
+  }
+  
+  .slide_principal img{
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .slide_principal li input:checked ~img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+  }
+  
+  
 /*Fim do Slide*/
