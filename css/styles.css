@@ -3,6 +3,7 @@
     padding: 0 auto;
     box-sizing: border-box;
 }
+
 html,body{
     min-height: 100%;
 }
@@ -38,14 +39,13 @@ body{
     gap: 35px;
     background-color: #52322F;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);   /*deixar todos os item alinhados*/
+    max-height: 180px;
 
 
 }
 
 .titulo{
-    
-    position: absolute;
-    left: 300px;
+    position: relative;
 }
 .titulo h1{
     margin: 0px;
@@ -59,9 +59,16 @@ body{
 }
 
 .logo{
+    position: relative;
     width:90px;
     height: 90px;
     border-radius: 10px;
+
+}
+.logo img{
+    width: 95%;
+    height: 90%;
+    margin-top: 5px;
 
 }
 .menu li a{
@@ -414,12 +421,13 @@ h1{
     margin-top: 30px;
 }
 .container{
-    width: 1000px;
+   max-width: 1000px;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+   justify-content: space-around;
     margin-bottom: 25px;
+    border: 2px solid black
     
 }
 
@@ -427,27 +435,39 @@ h1{
 .container div{
     flex: 1 1 auto;
     margin: 10px;
+    border: 2px solid black;
 
 }
 .item{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
-    height: 350px;
+    height: 420px;
     width: 200px;
     margin: 0 -5px;
 
 }
 .item p{
-    margin-top: 20PX;
+    width: 180px;
+    margin-top: 20px;
     text-align: center;
     color: #fff;
+
 }
+
 .preco_docinho{
     text-align: center;
+    
+}
+.item .escolha_docinho{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
 }
 .botao_comprar{
     margin-left: 35%;
     margin-top: 20px;
+    width: 80px;
+    height: 40px;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -455,10 +475,13 @@ h1{
     background-color: rgb(77, 179, 67);
     
 }
-img{
+.item img{
     width: 100%;
+    height: 45%;
     border-radius: 5px;
 }
+
+
 /* fim do meio da página produtos*/
 
 
@@ -559,6 +582,9 @@ img{
      
     
 }
+.h3_sobre{
+    margin-top: 60px;
+}
 
 .logo_local{
     width: 50px;
@@ -595,35 +621,37 @@ img{
 /*footer*/
 footer{
     display: flex;
-    align-items: center;   /*deixar todos os item alinhados*/
+    align-items: center;   /*deixar todos os item alinhados no centro*/
     flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
-    height: 150px;
+    height: 250px;
     width: 100%;
     position: static  /* fixed*/;
     bottom: 0;
     background-color: #52322F;
+
 }
 .col1{
-    width: 20%;
+    max-width: 20%;
     height: 80px;
-    margin-left: 1%;
+    margin-left: 1%; 
     border-radius: 5px;
-
-
+   
 }
 .col2{
-    width: 20%;
+    max-width: 20%;
     height: 80px;
     margin-left: 1px;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 
 }
 .t-footer{
-    color: #fff;
+    color: rgb(240, 117, 86);
 }
 .col1_conteudo{
     list-style: none;
+    padding-right: 20px;
+  
+    
 }
 .col1_conteudo li a{
     display: block;
@@ -631,13 +659,18 @@ footer{
     text-decoration: none;
 
 }
+.col1_conteudo li a:hover{
+    text-decoration: underline;
+}
 .col3{
-    width: 20%;
+    max-width: 1550px;
+    padding: 20px;
     height: 80px;
     margin-left: 1px;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
@@ -650,15 +683,33 @@ footer{
 }*/
 
 .imgs_rodape{
-    width: 40px;
-    height: 40px;
+    max-width: 80px;
+    height: 50px;
     margin-left: 3%;
     border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid;
     /*background-color: rgb(190, 103, 125);*/
 }
+
+.fotos_rod{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+
+
+}
 .logo_rodape{
-    width: 120px;
+    max-width: 120px;
     height: 120px;
+}
+.logo_rodape img{
+
+    max-width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
 }
 
 
