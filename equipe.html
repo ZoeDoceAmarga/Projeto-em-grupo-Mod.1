@@ -6,51 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Candy Store</title>
+    <link rel="shortcut icon" href="imagens/Candy (3).png" type="image/x-icon">
+    <title>Equipe - Candy Store</title>
 </head>
 
 <body>
     <header class="cabecalho">
-        <div class="logo"> <img src="imagens/logo.png"> </div>
-        <div class="titulo">
-            <h1>Candy Store</h1>
-        </div>
+        <div class="logo"> <img src="imagens/Candy (3).png">  </div>
+        <div class="titulo"><h1>Candy Store</h1></div>
         <ul class="menu">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="equipe.html">Nossa equipe</a></li>
-            <li><a href="contato.html">Contato</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
     </header>
 
-    <footer>
-        <div class="logo_rodape"> <img src="imagens/logo.png"> </div>
+    <main>
+        <div class="boxTextoEquipe">
+            <div class="textoEquipe">
+                <h1 id="equipeH1">Equipe</h1>
+                <p>Nosso time de funcionários é formado por pessoas dedicadas e apaixonadas pelo que fazem, que trabalham com carinho para trazer as melhores experiências que nossos produtos podem proporcionar, e tornar ainda mais inesquecíveis os momentos mais especiais da vida dos nossos clientes.</p>
+            </div>
+            <img src="imagens/Candy (3).png" alt="">
+        </div>
+        <div class="equipeBox">
+            <p>Nossa missão é fazer os melhores doces do mercado! <br>Queremos que a Candy Store se torne um ponto de encontro para todos os amantes dessas gostosuras!<br>Estamos empenhados em nos tornar referência na fabricação de doces artesanais.<br>Vamos juntos nessa?</p>
+        </div>
+        <h2 id="squadH1">Um pouco da equipe Candy Store:</h2>
+        <section class="boxEquipe">
+            <div class="integrante">
+                <img src="imagens/perfil.png" alt="">
+                <div class="perfilEquipe">
+                    <h3>Nome</h3>
+                    <h4>Cargo</h4>
+                    <p><em>Descrição</em></p>
+                </div>
+            </div>
+            <div class="integrante">
+                <img src="imagens/perfil.png" alt="">
+                <div class="perfilEquipe">
+                    <h3>Nome</h3>
+                    <h4>Cargo</h4>
+                    <p><em>Descrição</em></p>
+                </div>
+            </div>
+            <div class="integrante">
+                <img src="imagens/perfil.png" alt="">
+                <div class="perfilEquipe">
+                    <h3>Nome</h3>
+                    <h4>Cargo</h4>
+                    <p><em>Descrição</em></p>
+                </div>
+            </div>
+            <div class="integrante">
+                <img src="imagens/perfil.png" alt="">
+                <div class="perfilEquipe">
+                    <h3>Nome</h3>
+                    <h4>Cargo</h4>
+                    <p><em>Descrição</em></p>
+                </div>
+            </div>
+            <div class="integrante">
+                <img src="imagens/perfil.png" alt="">
+                <div class="perfilEquipe">
+                    <h3>Nome</h3>
+                    <h4>Cargo</h4>
+                    <p><em>Descrição</em></p>
+                </div>
+            </div>
+        </section>
+        <div class="contatoEquipe">
+            <p>Entre em contato para mais informações ou para dar seu feedback.<br>E que tal fazer parte da nossa equipe?<br>Venha trabalhar conosco!</p>
+            <a id="botaoBanner2" onclick="botao()" href="contato.html">Entre em contato</a>
+        </div>
+    </main>
 
+    <footer>
+        <div class="logo_rodape "> <img src="imagens/Candy (3).png"> </div>
+    
         <div class="col1">
             <ul class="col1_conteudo">
-                <p class="t-footer"><strong> Início </strong></p>
-                <li> <a href="home.html">Home </a> </li>
-                <li> <a href="produtos.html"> Produtos </a> </li>
-                <li> <a href="#"> Serviços </a> </li>
+            <p class="t-footer"><strong> Início </strong></p>
+            <li> <a href="index.html" >Home </a> </li>
+            <li> <a href="produtos.html"> Produtos </a> </li>
+            <li> <a href="#"> Serviços </a> </li>
             </ul>
         </div>
-
+    
         <div class="col2">
             <ul class="col1_conteudo">
-                <p class="t-footer"> <strong>Sobre nós</strong> </p>
-                <li> <a href="#">Sobre a empresa</a> </li>
-                <li> <a href="contato.html"> Contato </a> </li>
+            <p class="t-footer"> <strong>Sobre nós</strong> </p>
+            <li > <a href="sobre.html">Sobre a empresa</a> </li>
+            <li > <a href="contato.html"> Contato </a> </li>
             </ul>
         </div>
-
+    
         <div class="col3">
-            <div class="logo_rodape"><img src="imagens/facebook.png"></div>
-            <div class="logo_rodape"><img src="imagens/instagram.png"></div>
-            <div class="logo_rodape"><img src="imagens/whatsapp.png"></div>
+            <div class="imgs_rodape"><img src="imagens/facebook.png"></div>
+            <div class="imgs_rodape"><img src="imagens/instagram.png"></div>
+            <div class="imgs_rodape"><img src="imagens/whatsapp.png"></div>
         </div>
-
-    </footer>
+        
+        </footer>
     <script src="js/script.js"></script>
 </body>
 
