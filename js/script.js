@@ -29,3 +29,18 @@ function iniciaModal(modalID) {
       iniciaModal("modalPromo")
     }
   })
+
+
+// Menu Responsivo
+// quando o media query estiver ativado e o botão for clicado, o menu irá aparecer porque o '.menu ul.open' está configurada com altura de 250px. E se o botão for clicado de novo, o menu irá desaparecer porque o '.menu ul" está com altura de 0px.
+var ul = document.querySelector('.menu ul');
+var buttonBurguer = document.querySelector('.buttonBurguer');
+function menuRes(){
+    if (ul.classList.contains('open')){
+        ul.classList.remove('open')
+        buttonBurguer.classList.remove('active');
+    }else{
+        ul.classList.add('open')
+        buttonBurguer.classList.add('active');;
+    }
+}

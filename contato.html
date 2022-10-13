@@ -9,22 +9,28 @@
     <title>Contato - Candy Store</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="logo"> <img src="imagens/Candy (3).png">  </div>
-        <div class="titulo"><h1>Candy Store</h1></div>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
+    <header>
+        <div class="titulo">
+            <img src="imagens/Candy (3).png" alt="logo da empresa">
+            <h1>Candy Store</h1>
+        </div>
+        <div class="buttonBurguer" onclick="menuRes()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="banner1">
-        <h1>Seja bem-vindo!</h1>
-    </div>
+    <h1 id="tituloContato">Contato</h1>
     <section class="box-form">
-        <h2>Contato</h2>
         <form action="">
             <label>Nome</label>
             <input type="text" name="name" placeholder="Digite seu nome">

@@ -28,64 +28,89 @@ body{
     height: 110vh;
     background-color:#BC7359;
 }
-/*header*/
-
-.cabecalho{
+/* Header */
+header{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 35px;
     background-color: #52322F;
-    box-shadow: 0px 5px 20px rgb(0, 0, 0);   /*deixar todos os item alinhados*/
-    max-height: 180px;
-
-
+    color: #fff;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
 }
-
 .titulo{
-    position: relative;
-}
-.titulo h1{
-    margin: 0px;
-}
-
-.menu{
     display: flex;
-    justify-content: flex-start;  /*deixar a logo no lado esquerdo e o menu no lado direito*/
-    list-style: none;
-    flex-wrap: wrap; /*para os itens quebrarem quando atingir o max*/
+    flex: 45%;
+    align-items: center;
 }
-
-.logo{
-    position: relative;
-    width:90px;
+.titulo img{
+    width: 90px;
     height: 90px;
     border-radius: 10px;
-
 }
-.logo img{
-    width: 95%;
-    height: 90%;
-    margin-top: 5px;
-
+.menu{
+    display: flex;
+    flex: 55%;
+    overflow: hidden;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    transition: all 0.5s;
+}
+.menu li{
+    padding: 15px;
 }
 .menu li a{
-    display: block;
-    color: #fff;
     text-decoration: none;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
-
+    color: #fff; 
 }
-.menu li a:hover{
-    
+.menu li:hover, .buttonBurguer:hover{
     background-color: rgb(77, 75, 75);
+    border-radius: 10px;
+}
+.buttonBurguer{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    margin-top: 25px;
+}
+.buttonBurguer .line{
+    display: block;
+    width: 32px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 760px){
+    header, .menu ul{
+        flex-direction: column;
+    }
+    .menu ul{
+        margin-right: 35px;
+        height: 0;
+    }
+    .menu ul.open{
+        margin-right: 35px;
+        height: 250px;
+    }
+    .buttonBurguer{
+        display: block;
+    }
+    .buttonBurguer.active .line:nth-child(2){
+        opacity: 0;
+    }
+    .buttonBurguer.active .line:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    .buttonBurguer.active .line:nth-child(3){
+        transform: translateY(-10px) rotate(-45deg);
+    }
 }
 h1{
-    margin-top: 20px;
     text-align: center;
     color: #fff;
 }
@@ -122,7 +147,7 @@ h1{
 .texto p::first-letter{
     font-size: 50px;
 }
-#tituloProdutos{
+#tituloH1{
     font-family: Candy;
     margin: 90px 0 30px 0; 
 }
@@ -169,6 +194,7 @@ h1{
     font-family: Candy; 
     font-size: 40px;
     text-shadow: 2px 2px black; 
+    margin-top: 30px;
 }
 #peçaJa{
     font-family: Indie;
@@ -337,7 +363,7 @@ h1{
 }
 .equipeBox p{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 22px;
     color: #fff;
 }
@@ -421,21 +447,19 @@ h1{
     margin-top: 30px;
 }
 .container{
-   max-width: 1000px;
+    max-width: 1000px;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 25px;
-    border: 2px solid black
-    
+      
 }
 
 
 .container div{
     flex: 1 1 auto;
     margin: 10px;
-    border: 2px solid black;
 
 }
 .item{
@@ -733,9 +757,9 @@ section form{
     margin-bottom: 20px;
     border-radius: 30px;
 }
-section h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+#tituloContato{
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-family: Candy;
 }
 form label{
