@@ -1,6 +1,4 @@
-function botao(){
-    document.getElementById('seuPedido').style = 'background-color: #52322F; color: white';
-}
+
 function iniciaModal(modalID) {
     const modal = document.getElementById(modalID);
     if(modal){
