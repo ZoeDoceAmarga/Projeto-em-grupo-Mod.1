@@ -637,6 +637,13 @@ h1{
     .texto_nossa_empresa{
         margin-bottom: 40px;
     }
+    .coluna_dados_local{
+        width: 85%;
+        margin-left: 5px;
+    }
+    .logo_local{
+        margin-left: 55px;
+    }
     .coluna4{
         width: 80%;
         margin-top: 40px;
@@ -644,7 +651,6 @@ h1{
     .div_titulo_local{
         margin-top: 180px;
     }
-
 }
 /*fim da página sobre*/
 
@@ -705,14 +711,6 @@ footer{
 
 }
 
-/*.button_contato{
-    width:105px;
-    padding: 8px;
-    margin-right: 5px;
-    border-radius:15px;
-    background-color: rgb(255, 169, 57);
-}*/
-
 .imgs_rodape{
     max-width: 80px;
     height: 50px;
@@ -749,7 +747,7 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 75%;
+    /* width: 75%; */
     border-radius: 30px;
     margin-top: 20px;
     
