@@ -159,7 +159,7 @@ h1{
 .galeria .fotos{
     width: 498%;
     animation-name: animacao;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 
 }
@@ -179,7 +179,6 @@ h1{
     width: 20%;
     height: 360px;
 }
-
 
 .banner2{ /* banner para linkar com a página de serviços */
     background-image: url(../imagens/Trufas-doces-finos-gourmet-o87a6xc36halaa9id2o9hnrokb1oon0j5s4mcntnrc-1200x480.jpg);
@@ -213,6 +212,8 @@ h1{
 }
 #botaoBanner2:hover{
     padding: 12px;
+    background-color: #52322F;
+    color: #fff;
 }
 /* pop-up */
 .modalContainer{
@@ -347,7 +348,7 @@ h1{
     margin: 0 90px 0 90px;
 }
 .boxTextoEquipe img{
-    width: 450px;
+    width: 400px;
     height: 400px;
 }
 #equipeH1{
@@ -420,6 +421,10 @@ h1{
 .perfilEquipe p, .perfilEquipe h3, .perfilEquipe h4{
     font-family: Roboto;
     margin: 0 20px 15px 20px;
+}
+.perfilEquipe h4{
+    color: rgb(240, 117, 86);
+    text-shadow: 1px 1px black;
 }
 
 @media (max-width: 1300px){
@@ -512,45 +517,40 @@ h1{
 
 /*meio da página sobre*/
 .coluna1{
-    width: 50%;
-    height: 480px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     
 }
 .coluna2{
-    width: 50%;
-    height: 480px;
+    width: 80%;
+}
+.foto_sobre{
+    width: 100%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 .nossa_empresa{
     display: flex;
 }
+
 .texto_nossa_empresa{
-
-     display: flex;
-     flex-direction: column;
-     width: 75%;
-     color: #fff;
-        
-        
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    color: #fff;       
 }
- .separador{
-
-     margin-top: 120px;
-}
-
- .texto_nossa_empresa p{ 
+.texto_nossa_empresa p{ 
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 20px;
-    margin: 20px 20px 15px 20px;
+    margin: 20px 50px 0px 50px;
     }
-.foto_sobre{
-    width: 100%;
-    margin-top: 50px;
-    height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-}
 .banner_separador::before{
     content: ' ';
     display: block;
@@ -578,58 +578,51 @@ h1{
     z-index: 2;
     text-align: center;
     top: 60px;
-
 }
 
 .div_titulo_local{
     width: 100%;
     margin-top: 200px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     
 }
 .h2_titulo_local{
     text-align: center;
     color: #fff;
 }
+
 .nosso_local{
     display: flex;
-    
-}
+    align-items: center;
+    width: 100%;
+    margin-bottom: 130px;
 
-.coluna3{
-    width: 50%;
-    height: 450px;
+}
+.coluna_dados_local{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    color: #fff;
-     
-    
+    width: 40%;
 }
-.h3_sobre{
-    margin-top: 60px;
+.localizacao{
+    display: flex;
+    width: 100%;
+    margin: 40px 0 30px 0;
+}
+
+.dados_local{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
 }
 
 .logo_local{
     width: 50px;
     height: 50px;
-    margin-bottom: 50px;
-    
+    margin: 0 10px 0 10px;
 }
-.logos_local{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    left: 55px;
-    width: 55px;
-    height: 300px;
 
-}
 .coluna4{
     width: 50%;
-    height: 450px;
-
 }
 .mapa{
     display: flex;
@@ -637,8 +630,22 @@ h1{
     justify-content: center;
 }
 
+@media (max-width: 1000px){
+    .coluna1, .nosso_local{
+        flex-direction: column;
+    }
+    .texto_nossa_empresa{
+        margin-bottom: 40px;
+    }
+    .coluna4{
+        width: 80%;
+        margin-top: 40px;
+    }
+    .div_titulo_local{
+        margin-top: 180px;
+    }
 
-
+}
 /*fim da página sobre*/
 
 
@@ -753,7 +760,8 @@ section form{
     display: flex;
     flex-direction: column;
     background-color: #52322F;
-    padding: 30px;
+    padding: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 30px;
 }
@@ -763,21 +771,40 @@ section form{
     font-family: Candy;
 }
 form label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     font-family: Indie;
     font-size: 17px;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: #fff;
 }
 form input{
+    display:flex ;
+    text-align: center;
     border-radius: 30px;
+    flex: 100%;
     padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
     outline: none;
     border: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+form span{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    color:#db3236;
+    display: none;
+}
 form textarea{
+    display: flex;
+    text-align: center;
     padding: 15px;
     outline: none;
     border: 0;
