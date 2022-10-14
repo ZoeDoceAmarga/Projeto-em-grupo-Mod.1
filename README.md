@@ -13,6 +13,9 @@ No projeto, utilizamos HTML5, CSS3, JavaScript.
 
 
 <h2> O Site </h2>
+<img src="">
+![Captura de tela 2022-10-14 161706](https://user-images.githubusercontent.com/65381107/195925875-7f919941-faa5-440e-bae9-5e203e9b3fac.png)
+
 
 
 <h3>📌 Link do projeto no github Pages:https://zoedoceamarga.github.io/Projeto-em-grupo-Mod.1/  </h3>
