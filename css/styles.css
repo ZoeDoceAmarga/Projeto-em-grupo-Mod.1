@@ -749,17 +749,17 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #fff;
     width: 75%;
     border-radius: 30px;
     margin-top: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 
 }
 section form{
     display: flex;
     flex-direction: column;
     background-color: #52322F;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
