@@ -3,7 +3,6 @@
     padding: 0 auto;
     box-sizing: border-box;
 }
-
 html,body{
     min-height: 100%;
 }
@@ -20,7 +19,6 @@ html,body{
     src: url(Anton-Regular.ttf);
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
 body{
     padding: 0px;
     margin: 0px;
@@ -84,7 +82,6 @@ header{
     background-color: #fff;
     transition: all 0.3s ease-in-out;
 }
-
 @media(max-width: 760px){
     header, .menu ul{
         flex-direction: column;
@@ -128,7 +125,6 @@ h1{
     width: 100%;
     margin-top: 10px;
 }
-
 .texto{ /* div para texto de apresentação da empresa */
     display: flex;
     flex-direction: column;
@@ -161,7 +157,6 @@ h1{
     animation-name: animacao;
     animation-duration: 8s;
     animation-iteration-count: infinite;
-
 }
 @keyframes animacao{
     0%{ margin-left: 0%; }
@@ -173,13 +168,11 @@ h1{
     75%{margin-left: -300%;}
     95%{margin-left: -300%;}
     100%{margin-left: -400%;}
-
 }
 .galeria .fotos img{
     width: 20%;
     height: 360px;
 }
-
 .banner2{ /* banner para linkar com a página de serviços */
     background-image: url(../imagens/Trufas-doces-finos-gourmet-o87a6xc36halaa9id2o9hnrokb1oon0j5s4mcntnrc-1200x480.jpg);
     background-size: cover;
@@ -224,27 +217,25 @@ h1{
     top: 0px;
     left: 0px;
     z-index: 20000;
-    display: none;
+    display: block;
     justify-content: center;
     align-items: center;
-  }
-
-  .modalContainer.mostrar{
+}
+.modalContainer.mostrar{
     display: flex;
-
-  }
-  .modal{
+}
+.modal{
+    top: 30%;
     background: #d68e73;
+    height: 350px;
     width: 30%;
     min-width: 300px;
-    height: 50%;
     padding: 40px;
     border: 10px solid white;
     box-shadow: 0 0 0 10px #BC7359 ;
     position: relative;
-   
-  }
-  @keyframes modal{
+}
+@keyframes modal{
     from{
       opacity: 0;
       transform: translate3d(0,-60px,0);
@@ -253,14 +244,11 @@ h1{
       opacity: 1;
       transform:translate3d(0,0,0);
     }
-
-  }
-  .mostrar .modal{
+}
+.mostrar .modal{
     animation: modal .3s;
- 
-
-  }
-  .fechar{
+}
+.fechar{
     position: absolute;
     top: -30px;
     right: -30px;
@@ -272,15 +260,8 @@ h1{
     color: black;
     box-shadow: 0 4px 4px 0 rgba(0,0,0, .3);
     cursor: pointer;
-
-  }
-
-  .modalContainer.mostrar{
-    display: flex;
-
-  }
-  .button_pop{
-    /* background-color: #8aa0e9; */
+}
+.button_pop{
     background-color: #93e943;
     width: 200px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.2);
@@ -290,50 +271,44 @@ h1{
     padding: 15px;
     margin-bottom: 25px;
     font-size: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
     position: absolute;
     top:240px;
-   
-  }
-  .button_pop:hover{
-    /* background-color: #e4af00; */
+}
+.button_pop:hover{
     background-color: #7feb1b;
-  }
-  .input_pop{
+
+}
+.input_pop{
     position: relative;
-    /* padding: 0.2em 0.6em; */
     border: 1px solid #CCC;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     width: 200px;
     border-radius: 5px;
-    padding: 15px ;
-    
-  
-  }
-  .input_pop:focus{
-    background: rgb(235, 224, 174);
-    
-  }
-  .titulo_pop{
+    padding: 15px ;  
+}
+.input_pop:focus{
+    background: rgb(235, 224, 174);    
+}
+.titulo_pop{
     color: #fff;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 25px;
-  }
-  .formulario_pop{
+}
+.formulario_pop{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-/* fim do pop-up */
+}
+/*Fim do pop-up*/
+/*Fim do conteúdo da página inicial*/
 
-
-/* fim do conteúdo da página inicial */
-
-/* Página da equipe */
+/*Inicio Página da equipe */
 .boxTextoEquipe{
     display: flex;
     align-items: center;
@@ -394,7 +369,6 @@ h1{
     color: #fff;
     margin: 60px 0 80px 0;
 }
-/*cards dos funcionários da empresa*/
 .boxEquipe{
     display: flex;
     flex-wrap: wrap;
@@ -426,7 +400,6 @@ h1{
     color: rgb(240, 117, 86);
     text-shadow: 1px 1px black;
 }
-
 @media (max-width: 1300px){
     .boxEquipe, .boxTextoEquipe{
         flex-direction: column;
@@ -444,9 +417,9 @@ h1{
         margin: 20px 0 40px 0;
     }
 }
-/* Fim da página da equipe */
+/* Fim Página da equipe*/
 
-/*meio da página produto*/
+/*Inicio Página de Produtos*/
 .titulo_produto{
     margin-bottom: 20px;
     margin-top: 30px;
@@ -457,15 +430,11 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 25px;
-      
+    margin-bottom: 25px;     
 }
-
-
 .container div{
     flex: 1 1 auto;
     margin: 10px;
-
 }
 .item{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -473,19 +442,15 @@ h1{
     height: 420px;
     width: 200px;
     margin: 0 -5px;
-
 }
 .item p{
     width: 180px;
     margin-top: 20px;
     text-align: center;
     color: #fff;
-
 }
-
 .preco_docinho{
     text-align: center;
-    
 }
 .item .escolha_docinho{
     margin-top: 5px;
@@ -501,19 +466,14 @@ h1{
     border-radius: 2px;
     cursor: pointer;
     color: #fff;
-    background-color: rgb(77, 179, 67);
-    
+    background-color: rgb(77, 179, 67);   
 }
 .item img{
     width: 100%;
     height: 45%;
     border-radius: 5px;
 }
-
-
-/* fim do meio da página produtos*/
-
-
+/*Fim Página de Produtos*/
 
 /*meio da página sobre*/
 .coluna1{
@@ -523,7 +483,6 @@ h1{
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    
 }
 .coluna2{
     width: 80%;
@@ -532,12 +491,10 @@ h1{
     width: 100%;
     height: 400px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .nossa_empresa{
     display: flex;
 }
-
 .texto_nossa_empresa{
     display: flex;
     flex-direction: column;
@@ -550,7 +507,6 @@ h1{
     font-size: 20px;
     margin: 20px 50px 0px 50px;
     }
-
 .banner_separador::before{
     content: ' ';
     display: block;
@@ -566,9 +522,6 @@ h1{
     min-height: 200px;
     margin: auto 0px;
     background-image: url(../imagens/doces-em-goiania-lugares-para-provar-verdadeiras-delicias-9.jpg);
-    
-   
-
 }
 .banner_separador p{
     font-size: 35px;
@@ -579,24 +532,20 @@ h1{
     text-align: center;
     top: 60px;
 }
-
 .div_titulo_local{
     width: 100%;
     margin-top: 200px;
     margin-bottom: 60px;
-    
 }
 .h2_titulo_local{
     text-align: center;
     color: #fff;
 }
-
 .nosso_local{
     display: flex;
     align-items: center;
     width: 100%;
     margin-bottom: 130px;
-
 }
 .coluna_dados_local{
     display: flex;
@@ -608,19 +557,16 @@ h1{
     width: 100%;
     margin: 40px 0 30px 0;
 }
-
 .dados_local{
     display: flex;
     flex-direction: column;
     color: #fff;
 }
-
 .logo_local{
     width: 50px;
     height: 50px;
     margin: 0 10px 0 10px;
 }
-
 .coluna4{
     width: 50%;
 }
@@ -629,7 +575,6 @@ h1{
     margin-top: 10px;
     justify-content: center;
 }
-
 @media (max-width: 1000px){
     .coluna1, .nosso_local{
         flex-direction: column;
@@ -654,8 +599,7 @@ h1{
 }
 /*fim da página sobre*/
 
-
-/*footer*/
+/* Inicio do Footer*/
 footer{
     display: flex;
     align-items: center;   /*deixar todos os item alinhados no centro*/
@@ -665,21 +609,18 @@ footer{
     position: static  /* fixed*/;
     bottom: 0;
     background-color: #52322F;
-
 }
 .col1{
     max-width: 20%;
     height: 80px;
     margin-left: 1%; 
     border-radius: 5px;
-   
 }
 .col2{
     max-width: 20%;
     height: 80px;
     margin-left: 1px;
     border-radius: 5px;   
-
 }
 .t-footer{
     color: rgb(240, 117, 86);
@@ -687,14 +628,11 @@ footer{
 .col1_conteudo{
     list-style: none;
     padding-right: 20px;
-  
-    
 }
 .col1_conteudo li a{
     display: block;
     color: rgb(255, 250, 250);
     text-decoration: none;
-
 }
 .col1_conteudo li a:hover{
     text-decoration: underline;
@@ -708,9 +646,7 @@ footer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
-
 .imgs_rodape{
     max-width: 80px;
     height: 50px;
@@ -718,47 +654,39 @@ footer{
     border-radius: 10px;
     cursor: pointer;
     border: 2px solid;
-    /*background-color: rgb(190, 103, 125);*/
 }
-
 .fotos_rod{
     width: 40px;
     height: 40px;
     margin-top: 10px;
     margin-left: 15px;
-
-
 }
 .logo_rodape{
     max-width: 120px;
     height: 120px;
 }
 .logo_rodape img{
-
     max-width: 100%;
     height: 100%;
     margin-top: 10px;
-
 }
-
+/*Fim do Footer*/
 
 /*Inicio do Form*/
 .box-form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* width: 75%; */
     border-radius: 30px;
     margin-top: 20px;
-    
-
+    background-color: #fff;
 }
 section form{
     display: flex;
     flex-direction: column;
     background-color: #52322F;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 50px;
+    width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 30px;
@@ -782,10 +710,9 @@ form input{
     display:flex ;
     text-align: center;
     border-radius: 30px;
-    flex: 100%;
     padding: 15px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
     outline: none;
     border: 0;
     margin-bottom: 0px;
@@ -841,26 +768,22 @@ form button:hover{
     height: 400px;
     background-color: antiquewhite;
     border-radius: 25px;
-  }
-  
-  .slide_principal li {
+}
+.slide_principal li {
     list-style: none;
     position: absolute;
-  }
-  
-  .slide_principal img{
+}
+.slide_principal img{
     width: 1540px;
     height: 400px;
     margin: auto;
     vertical-align: top;
     border-radius: 5px;
-  }
-  
-  .slide_principal input{
+}  
+.slide_principal input{
     display: none;
-  }
-  
-  .slide_principal label{
+}  
+.slide_principal label{
     background-color: rgb(247, 237, 237);
     bottom: 10px;
     position: absolute;
@@ -870,33 +793,26 @@ form button:hover{
     border-radius: 5px;
     cursor: pointer;
     z-index: 10;
-  }
-  
-  .slide_principal label:hover{
+}  
+.slide_principal label:hover{
     background-color: rgb(130, 134, 133);
-  }
-  
-  .slide_principal li:nth-child(1) label{
+}  
+.slide_principal li:nth-child(1) label{
     left: 10px;
-  }
-  .slide_principal li:nth-child(2) label{
+}
+.slide_principal li:nth-child(2) label{
     left: 30px;
-  }
-  
-  .slider li:nth-child(3) label{
+}  
+.slider li:nth-child(3) label{
     left: 100px;
-  }
-  
-  .slide_principal img{
+}  
+.slide_principal img{
     opacity: 0;
     visibility: hidden;
-  }
-  
-  .slide_principal li input:checked ~img{
+}  
+.slide_principal li input:checked ~img{
     opacity: 1;
     visibility: visible;
     z-index: 10;
-  }
-  
-  
+}    
 /*Fim do Slide*/
