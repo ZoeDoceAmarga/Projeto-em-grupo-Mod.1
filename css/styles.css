@@ -173,6 +173,13 @@ h1{
     width: 20%;
     height: 360px;
 }
+@media (max-width: 660px){
+    .galeria{
+        width: 435px;
+    }
+ 
+
+}
 .banner2{ /* banner para linkar com a página de serviços */
     background-image: url(../imagens/Trufas-doces-finos-gourmet-o87a6xc36halaa9id2o9hnrokb1oon0j5s4mcntnrc-1200x480.jpg);
     background-size: cover;
@@ -199,12 +206,12 @@ h1{
     text-decoration: none;
     background-color: white;
     padding: 10px;
+    margin-bottom: 10px;
     font-family: Cambria;
     border-radius: 10px;
     color: #1d1e1f;
 }
 #botaoBanner2:hover{
-    padding: 12px;
     background-color: #52322F;
     color: #fff;
 }
@@ -250,7 +257,7 @@ h1{
 }
 .fechar{
     position: absolute;
-    top: -30px;
+    top: -50px;
     right: -30px;
     width: 40px; 
     height: 40px;
@@ -473,6 +480,70 @@ h1{
     height: 45%;
     border-radius: 5px;
 }
+
+/* formulário da página de produtos */
+.modal_produtos{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    margin: 0 0 0 0 ;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;   
+}
+.popup_produtos{
+    top: 12%;
+    background: #d68e73;
+    width: 70%;
+    padding: 40px;
+    border: 10px solid white;
+    box-shadow: 0 0 0 10px #BC7359 ;
+    position: absolute;
+    display: flex;
+}
+.popup_produtos h3{
+    color: #fff;
+}
+.info_produtos_popup{
+    display: block;
+    text-align: center;
+    width: 70%;
+}
+.info_produtos_popup input{
+    padding: 10px;
+    width: 70%;
+}
+.info_produtos_popup label{
+    margin: 20px 0 0 0;
+}
+.info_produtos_popup p, button{
+    color: #fff;
+    margin-top: 20px;
+}
+.popup_produtos img{
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+@media(max-width: 1100px){
+    .popup_produtos{
+        padding: 0;
+        top: 9%;
+        flex-direction: column;
+        width: 85%;
+    }
+    .info_produtos_popup{
+        width: 95%;
+    }
+    .popup_produtos img{
+        height: 120px;
+        width: 120px;
+    }
+}
+/* Fim do formulário da página de produtos */
+
 /*Fim Página de Produtos*/
 
 /*meio da página sobre*/

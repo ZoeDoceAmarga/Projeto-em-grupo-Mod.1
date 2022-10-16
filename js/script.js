@@ -4,6 +4,17 @@ function closePop(){
   popup.style.display = 'none';
 }
 
+
+// Interação da Página de Produtos
+const modalProdutos = document.querySelector('.modal_produtos');
+function closePopup(){
+  modalProdutos.style.display = 'none';
+}
+var modal_produtos = document.getElementById('modal_produtos_pop');
+function botaoComprar(){
+  modal_produtos.style.display = 'flex';
+}
+
 // Menu Responsivo
 // quando o media query estiver ativado e o botão for clicado, o menu irá aparecer porque o '.menu ul.open' está configurada com altura de 250px. E se o botão for clicado de novo, o menu irá desaparecer porque o '.menu ul" está com altura de 0px.
 var ul = document.querySelector('.menu ul');
