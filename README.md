@@ -15,7 +15,7 @@ No projeto, utilizamos HTML5, CSS3, JavaScript.
 <h2> 📦 Desenvolvimento</h2>
 <ul>
   <li><a href="https://github.com/ZoeDoceAmarga">@ZoeDoceAmarga</li>
-  <li><a href="https://github.com/dcb95">@dcb95</li>
+  <li><a href="https://github.com/DiegoBernardes95">@DiegoBernardes95</li>
   <li><a href="https://github.com/leovillar94">@leovillar94</li>
   <li><a href="https://github.com/Juevan">@Juevan</li>
   <li><a href="https://github.com/VihProgramer">@VihProgramer</li>
