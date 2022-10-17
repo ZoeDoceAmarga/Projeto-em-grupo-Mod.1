@@ -31,6 +31,6 @@ No projeto, utilizamos HTML5, CSS3, JavaScript.
 
 
 
-<h3>📌 Link do projeto no github Pages:https://zoedoceamarga.github.io/Projeto-em-grupo-Mod.1/</h3>
+<h3>📌 Link do projeto no github Pages: <a href="https://zoedoceamarga.github.io/Projeto-em-grupo-Mod.1">https://zoedoceamarga.github.io/Projeto-em-grupo-Mod.1</h3>
 
 
